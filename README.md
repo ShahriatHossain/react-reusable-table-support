@@ -15,8 +15,8 @@ import React from 'react'
 import { Table } from 'react-reusable-table'
 ##
 
-##
-const App = () => (
+
+## const App = () => (
     <div className="App">
 <Table
 caption=""
@@ -26,15 +26,15 @@ footerCells={utility.getHeaderCells()}
 headerCells={utility.getHeaderCells()}
 showFooter={false}
 sortedUporDown={this.sortRecordsHandler}/>
-);
-##
+## );
+
   
 // utility.js
 
 // getHeaderCells method
 
-##
-export const getHeaderCells  =  () =>  {
+
+## export const getHeaderCells  =  () =>  {
 return [
 { label: 'ID', name: 'id', isFilterAble: false, isSortAble: false },
 { label: 'Status', name: 'status', isFilterAble: true, isSortAble: false },
@@ -45,26 +45,26 @@ return [
 { label: 'Install Date', name: 'install_date', isFilterAble: false, isSortAble: true },
 { label: 'Floor', name: 'floor', isFilterAble: true, isSortAble: false }
 ]
-}
-##
+## }
+
 
 // sort records in asc or desc order
-##
-sortRecordsHandler = (colName, sortType) => {
+
+## sortRecordsHandler = (colName, sortType) => {
 this.props.onSortRecords(colName, sortType);
-}
-##
+## }
+
 
 //  go to detail page
-##
-detailPageHandler = (id) => {
+
+## detailPageHandler = (id) => {
         this.props.history.push('records/' + id);
- }
-##
+## }
+
 
 // sample records
-##
-{
+
+## {
 	"data": [
 {
 			"status": "running",
@@ -87,8 +87,8 @@ detailPageHandler = (id) => {
 			"floor": 4
 		}
 	]
-}
-##
+## }
+
 
 ## Sorting & Filtering
 
@@ -96,8 +96,11 @@ Sorting and filtering can be configurable using any column items from the record
 
 ## Installation
 ## npm
+
 npm i react-reusable-table --save
+
 ## yarn
+
 yarn add react-reusable-table 
  
  
