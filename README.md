@@ -17,15 +17,17 @@ import { Table } from 'react-reusable-table'
 
 
 ## const App = () => (
-    <div className="App">
-<Table
-caption=""
-data={this.props.records}
-detailPage={this.detailPageHandler}
-footerCells={utility.getHeaderCells()}
-headerCells={utility.getHeaderCells()}
-showFooter={false}
-sortedUporDown={this.sortRecordsHandler}/>
+
+## <Table
+	caption=""
+	data={this.props.records}
+	detailPage={this.detailPageHandler}
+	footerCells={utility.getHeaderCells()}
+	headerCells={utility.getHeaderCells()}
+	showFooter={false}
+	sortedUporDown={this.sortRecordsHandler}
+## />
+
 ## );
 
   
